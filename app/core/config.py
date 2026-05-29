@@ -4,7 +4,7 @@ from pydantic_settings import BaseSettings
 class Settings(BaseSettings):
     app_name: str = "Exec Manager"
     debug: bool = False
-    # database_url: str
+    database_url: str = ""
 
     class Config:
         env_file = ".env"
