@@ -17,6 +17,8 @@ indent-style = "space"
 
 [tool.mypy]
 python_version = "3.13"
+mypy_path = "."
+explicit_package_bases = true
 strict = false
 plugins = ["pydantic.mypy"]
 exclude = [".venv"]
